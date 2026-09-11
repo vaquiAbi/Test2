@@ -8,7 +8,7 @@ env:
   RESOURCE-GROUP: rg-eshoponweb-lapdlc
   LOCATION: westeurope
   TEMPLATE-FILE: infra/webapp.bicep
-  SUBSCRIPTION-ID: '$(subscriptionId)' 
+  SUBSCRIPTION-ID:  ${{secrets.subscriptionId}}
   WEBAPP-NAME: eshoponweb-webapp-lapdlc
 
 jobs:
